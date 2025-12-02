@@ -1,10 +1,10 @@
 import re
 
-with open("input.txt") as f:
-    content = f.read().strip()
-
 ranges = []
 invalid = []
+
+with open("input.txt") as f:
+    content = f.read()
 
 for part in content.split(","):
     start, end = part.split("-")

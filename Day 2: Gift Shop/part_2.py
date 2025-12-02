@@ -1,11 +1,11 @@
 import re
 
-with open("input.txt") as f:
-    content = f.read().strip()
-
 ranges = []
 invalid = []
 pattern = re.compile(r'^(\d+)\1+$')
+
+with open("input.txt") as f:
+    content = f.read()
 
 for part in content.split(","):
     start, end = part.split("-")
